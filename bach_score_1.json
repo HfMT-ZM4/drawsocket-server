@@ -1,0 +1,42 @@
+{
+    "author": "Bach",
+    "title": "Coffee Cantata",
+    "parts": [
+        {
+            "name": "Soprano",
+            "score": [
+                {
+                    "key": "clearform",
+                    "val": "*"
+                },
+                {
+                    "key": "svg",
+                    "val": {
+                        "new": "text",
+                        "text": "Soprano",
+                        "x": 100,
+                        "y": 100
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Alto",
+            "score": [
+                {
+                    "key": "clearform",
+                    "val": "*"
+                },
+                {
+                    "key": "svg",
+                    "val": {
+                        "new": "text",
+                        "text": "Alto",
+                        "x": 100,
+                        "y": 100
+                    }
+                }
+            ]
+        }
+    ]
+}

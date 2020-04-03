@@ -1,0 +1,42 @@
+{
+    "author": "Bach",
+    "title": "Christmas Cantata",
+    "parts": [
+        {
+            "name": "Tenor",
+            "score": [
+                {
+                    "key": "clearform",
+                    "val": "*"
+                },
+                {
+                    "key": "svg",
+                    "val": {
+                        "new": "text",
+                        "text": "Tenor",
+                        "x": 100,
+                        "y": 100
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Bass",
+            "score": [
+                {
+                    "key": "clearform",
+                    "val": "*"
+                },
+                {
+                    "key": "svg",
+                    "val": {
+                        "new": "text",
+                        "text": "Bass",
+                        "x": 100,
+                        "y": 100
+                    }
+                }
+            ]
+        }
+    ]
+}

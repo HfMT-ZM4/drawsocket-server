@@ -1,0 +1,46 @@
+#forms {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#conductorUI {
+    display: table;
+    top: 100px;
+    left: 100px;
+    width: auto;
+    position: absolute;
+    white-space: nowrap;
+}
+
+#ensembleLinks {
+    top: 100px;
+    left: 500px;
+    white-space: nowrap;
+}
+
+#ensembleLinks a {
+    position: relative;
+}
+
+div.conductorForm {
+    position: relative;
+    display: table-row;
+}
+
+.conductorForm label, input, select, button {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+.conductorForm span {
+    display: table-cell;
+    padding-bottom: 10px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+label {
+    padding-right: 10px;
+}
+

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 55.0, 79.0, 1505.0, 914.0 ],
+		"rect" : [ 9.0, 79.0, 1505.0, 914.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,25 +39,13 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-24",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 405.0, 837.0, 100.0, 22.0 ],
-					"text" : "o.print"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-14",
-					"linecount" : 8,
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 145.0, 580.0, 153.0, 114.0 ],
-					"text" : "to do: immeidately send draw messages to ensemble URLs so that when they log in it is ready -- don't forget to start with a clear message so that the default setup UI isn't there"
+					"patching_rect" : [ 579.0, 421.0, 487.0, 100.0 ],
+					"text" : "to do: \nright now the parts display the form for a moment before applying the 'clearform\" message\nI had to add that because the clear message doesn't get cached, it clears the cache, so I can't use that to clear the form on load.\n\nmaybe one option would be to have the form load after a delay and then turn it off by a message in the cache loader"
 				}
 
 			}
@@ -119,18 +107,6 @@
 									"patching_rect" : [ 50.0, 412.0, 378.0, 372.0 ],
 									"presentation_linecount" : 30,
 									"text" : "/ensembleList = [],\n\nmap(\n   lambda([b],\n     let({\n           send_url: /url + \"-\"+ b./name\n         },\n         /ensembleList = [/ensembleList, {\n                         /partName : b./name,\n                         /url : send_url\n                      }],\n         assign(\"/out\" + send_url,  b./score )\n     )\n  \n  ), /parts\n),\n\nassign(\"/out\"+/url, { \n  /key : \"conductor\",\n  /cache : false,\n  /val : {\n    /id : \"ensembleList\",\n    /ensemble : /ensembleList\n  }\n})\n"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 8,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 536.0, 172.0, 150.0, 114.0 ],
-									"text" : "to do: immeidately send draw messages to ensemble URLs so that when they log in it is ready -- don't forget to start with a clear message so that the default setup UI isn't there"
 								}
 
 							}
@@ -793,15 +769,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"midpoints" : [ 314.5, 894.0, 70.5, 894.0, 70.5, 249.0, 314.5, 249.0 ],
-					"order" : 1,
-					"source" : [ "obj-25", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"order" : 0,
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -922,10 +889,6 @@
 			}
 , 			{
 				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.print.mxo",
 				"type" : "iLaX"
 			}
  ],

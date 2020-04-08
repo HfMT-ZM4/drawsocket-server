@@ -2,6 +2,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#rtc-video {
+    top: 100px;
+    left: 500px;
+}
+
 #conductorUI {
     display: table;
     top: 100px;

@@ -8,10 +8,11 @@ let pc = new RTCPeerConnection(servers);
 pc.onicecandidate = (event) => {
     if (event.candidate) {
       drawsocket.send({
-          'event': {
-              key: 'onICEandiate',
-              val: JSON.stringify(event.candidate)
-          }
+            key: 'signalPeer',
+            val: {
+                event: 'iceResponse',
+                response: JSON.stringify(event.candidate)
+            }
         });
     }
   }
@@ -23,20 +24,6 @@ async function handleWebRTCMessage(data) {
        await pc.addIceCandidate(content);
     }
 }
-
-
-
-const servers = null;  // Allows for RTC server configuration.
-
-// Create peer connections and add behavior.
-localPeerConnection = new RTCPeerConnection(servers);
-trace('Created local peer connection object localPeerConnection.');
-
-localPeerConnection.addEventListener('icecandidate', handleConnection);
-localPeerConnection.addEventListener(
-  'iceconnectionstatechange', handleConnectionChange);
-
-
 
 // Put variables in global scope to make them available to the browser console.
 const constraints = window.constraints = {

@@ -15,6 +15,10 @@ pingPeer.addEventListener('keydown', event => {
     }
 });
 
+
+
+
+
 generateButton.addEventListener('click', (e) => {    
     drawsocket.send({
         event: {

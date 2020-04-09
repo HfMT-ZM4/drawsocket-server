@@ -42,11 +42,14 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-5",
+					"linecount" : 9,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 108.0, 367.0, 356.0, 34.0 ]
+					"patching_rect" : [ 502.0, 760.0, 356.0, 143.0 ],
+					"presentation_linecount" : 9,
+					"text" : "/from : {\n\t/url : \"/view2\",\n\t/ip : \"::1\",\n\t/uniqueid : \"nXjPG3raiC4769skXemPgg==\"\n},\n/event : {\n\t/key : \"conductor\",\n\t/val : \"getPieces\"\n}"
 				}
 
 			}
@@ -652,7 +655,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 561.0, 342.0, 356.0, 48.0 ],
-					"text" : "/port/localhost : \"http://localhost:3002\",\n/port/ip : \"http://192.168.178.36:3002\""
+					"text" : "/stdout : \"received socket close /view2 aZsfQ12+y/Zou2XzESHHwQ==\""
 				}
 
 			}
@@ -695,6 +698,14 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"order" : 1,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-1", 2 ]
 				}
@@ -703,6 +714,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
+					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
